@@ -19,7 +19,8 @@ pipeline {
                 rtServer (
                     id: "ARTIFACTORY_SERVER",
                     url: "http://wartifactory101za.prod.rmn.local/artifactory",
-		    credentialsId: '1d1828ce-b1c0-4b6f-95ce-aba1ea832ec0'
+		    credentialsId: '1d1828ce-b1c0-4b6f-95ce-aba1ea832ec0',
+		    bypassProxy: true
                 )
 
                 rtMavenDeployer (
